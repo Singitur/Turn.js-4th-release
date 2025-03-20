@@ -289,7 +289,7 @@ function numberOfViews(book) {
 // Current view in a flipbook
 
 function getViewNumber(book, page) {
-	return parseInt((page || book.turn('page'))/2 + 1, 10);
+	return parseInt((page || book.turn('page'))/2 + 1, 14);
 }
 
 function moveBar(yes) {
