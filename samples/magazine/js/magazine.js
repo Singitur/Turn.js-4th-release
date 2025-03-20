@@ -55,7 +55,7 @@ function loadPage(page, pageElement) {
 }
 
 // Zoom in / Zoom out
-
+/*
 function zoomTo(event) {
 
 		setTimeout(function() {
@@ -181,7 +181,7 @@ function loadLargePage(page, pageElement) {
 	
 	img.attr('src', 'https://singitur.github.io/Turn.js-4th-release/samples/magazine/pages/' +  page + '-large.jpg');
 }
-
+*/
 // Load small page
 
 function loadSmallPage(page, pageElement) {
