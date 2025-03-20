@@ -10,7 +10,7 @@ function loadPage(page) {
 		container.find('.loader').remove();
 	});
 
-	img.attr('src', 'https://singitur.github.io/Turn.js-4th-release/samples/docs/pages/' +  (page-2) + '.png');
+	img.attr('src', 'https://singitur.github.io/Turn.js-4th-release/samples/docs/pages/' +  (page-2) + '.jpg');
 
 }
 
