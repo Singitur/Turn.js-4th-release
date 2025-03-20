@@ -5,13 +5,135 @@
 <!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en" class=""> <!--<![endif]-->
 <head>
-<script type="text/javascript" src="../../extras/jquery.min.1.7.js"></script>
-<script type="text/javascript" src="../../extras/jquery-ui-1.8.20.custom.min.js"></script>
-<script type="text/javascript" src="../../extras/jquery.mousewheel.min.js"></script>
-<script type="text/javascript" src="../../extras/modernizr.2.5.3.min.js"></script>
-<script type="text/javascript" src="../../lib/hash.js"></script>
-
-</head>
+	<title>Using turn.js and the new zoom feature</title>
+	<meta name="viewport" content="width = 1050, user-scalable = no" />
+	<script type="text/javascript" src="https://singitur.github.io/Turn.js-4th-release/extras/jquery.min.1.7.js"></script>
+	<script type="text/javascript" src="https://singitur.github.io/Turn.js-4th-release/extras/modernizr.2.5.3.min.js"></script>
+	<script type="text/javascript" src="https://singitur.github.io/Turn.js-4th-release/lib/hash.js"></script>
+	
+	  <style>
+		
+		body .navbar {
+		height: 0px;
+		padding: 0;
+		margin: 0;
+	}
+		
+		.header-inner .Header #header-inner {
+		overflow: auto;
+	}
+		
+		.footer-inner {
+		padding: 0px;
+	}
+	 .main-inner {
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}   
+		.Header h1 {
+		margin-bottom: 0px;
+	}
+		.header-inner .Header .titlewrapper {
+		padding: 0px;
+	}
+		
+		.content {
+		position: absolute;
+		word-wrap: break-word;
+	}
+		@import url('https://singitur.github.io/hende-sadom/fonts/Noto Serif/stylesheet.css');
+		
+	
+			* {
+				font-family: 'Noto Serif New' !important;
+			}
+		
+	/* {
+	  font-family: 'Noto Serif', Noto, serif;
+	  }
+	 */   
+		
+	.page_body {
+	padding-top: 0;
+	}
+		#acknowledgement {
+		text-align: center;}
+		
+	
+	body {
+	  position: relative;
+	  margin-top: 70px;
+	}
+	
+	
+	.sticky-top {
+	  display: block;
+	  padding-top: 10px;
+	  width: 100%;
+	  position: sticky;
+	  top: 0px;
+	  z-index: 10;
+	  background: #ffff;
+	  margin-bottom: 20px;
+	  border-radius: 0 0 45px 45px;
+	}
+	
+	  #headword {
+	  font-size: 32px;
+	  padding-top: 10px;
+	  padding-bottom: 10px;
+	  font-weight: bold;
+	  }
+	  #results {
+	  font-style: italic;
+	  }
+	  #comments.embed {
+	  display: none;
+	  }
+	  .main .PopularPosts {
+	  display: none;
+	  }
+	  .sidebar-container {
+	  display: none;
+	  }
+	  
+	  .centered-top {
+	  display: none; }
+	  
+	  .svg-icon-24.touch-icon.back-button.rtl-reversible-icon {
+	  display: none;
+	  }
+	  
+	  .svg-icon-24.touch-icon.search-icon {
+	  display: none;
+	  }
+	  
+	  .blogger {
+	  display: none;
+	  }
+	  .search {
+	  display: none;
+	  }
+	  
+	  .search-input {
+	  display: none;
+	  }
+	  .sticky .centered-top .search .return_link {
+	  display: none;
+	  }
+	  
+	  .no-results {
+		margin-top: 5px;
+		text-align: center;
+		font-style: italic;
+	  }
+	  
+	 
+	  </style>
+	
+	  
+	</head>
+	
 <body>
 
 <div id="canvas">
